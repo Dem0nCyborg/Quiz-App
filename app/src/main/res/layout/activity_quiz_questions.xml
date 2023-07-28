@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizQuestions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="What country does this flag belngs to ?"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="#35333A"
+            android:textSize="22sp"/>
+
+        <ImageView
+            android:id="@+id/flg_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_flag_of_argentina"
+            android:layout_margin="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <ProgressBar
+                android:id="@+id/pgbar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:minHeight="50dp"
+                android:indeterminate="false"
+                android:max="4"
+                android:progress="2"/>
+            <TextView
+                android:id="@+id/tv_pgrss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1/4"
+                android:textSize="18sp"
+                android:padding="15dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/opt_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_ccorrect"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="18sp"
+            tools:text="Argentina"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/opt_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_ccorrect"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="18sp"
+            tools:text="Argentina"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/opt_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_ccorrect"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="18sp"
+            tools:text="Argentina"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/opt_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_ccorrect"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="18sp"
+            tools:text="Argentina"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:backgroundTint="#00BCD4"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
